@@ -1,0 +1,1246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-08 09:57+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\blog\models.py:9 .\blog\models.py:21 .\blog\models.py:33
+#: .\contact\models.py:23 .\home\models.py:8 .\mobile\models.py:13
+#: .\mobile\models.py:25 .\mobile\models.py:49 .\shop\models.py:12
+#: .\shop\models.py:24 .\shop\models.py:48 .\watches\models.py:13
+#: .\watches\models.py:25 .\watches\models.py:49
+msgid "title"
+msgstr "Sarlovha"
+
+#: .\blog\models.py:10 .\blog\models.py:22 .\blog\models.py:43
+#: .\contact\models.py:12 .\home\models.py:13 .\mobile\models.py:14
+#: .\mobile\models.py:26 .\mobile\models.py:38 .\mobile\models.py:67
+#: .\shop\models.py:13 .\shop\models.py:25 .\shop\models.py:37
+#: .\shop\models.py:65 .\watches\models.py:14 .\watches\models.py:26
+#: .\watches\models.py:38 .\watches\models.py:66
+msgid "created"
+msgstr "Yaratilgan"
+
+#: .\blog\models.py:16 .\blog\models.py:38 .\mobile\models.py:59
+#: .\shop\models.py:31 .\shop\models.py:56 .\watches\models.py:59
+msgid "category"
+msgstr "Katogoriya"
+
+#: .\blog\models.py:17 .\shop\models.py:32
+msgid "categories"
+msgstr "Katagoriyalar"
+
+#: .\blog\models.py:28
+msgid "tag"
+msgstr "Teg"
+
+#: .\blog\models.py:29 .\blog\models.py:39
+msgid "tags"
+msgstr "Teglar"
+
+#: .\blog\models.py:34
+msgid "video"
+msgstr "Video"
+
+#: .\blog\models.py:35
+msgid "author"
+msgstr "Mualif"
+
+#: .\blog\models.py:40
+msgid "short_description"
+msgstr "Qisqacha Tavsif"
+
+#: .\blog\models.py:41 .\mobile\models.py:65 .\shop\models.py:63
+#: .\watches\models.py:65
+msgid "long_description"
+msgstr "To'liq Tavsif"
+
+#: .\blog\models.py:42
+msgid "extra content"
+msgstr "Qo'shimcha malumot"
+
+#: .\blog\models.py:52 .\blog\models.py:59
+msgid "blog"
+msgstr "Blog"
+
+#: .\blog\models.py:53
+msgid "blogs"
+msgstr "Bloglar"
+
+#: .\blog\models.py:60 .\checkouts\models.py:18 .\contact\models.py:8
+#: .\home\models.py:24 .\users\models.py:16
+msgid "name"
+msgstr "Ism"
+
+#: .\blog\models.py:61 .\checkouts\models.py:19
+msgid "second name"
+msgstr "Familya"
+
+#: .\blog\models.py:62 .\blog\models.py:69
+msgid "comment"
+msgstr "Izoh"
+
+#: .\blog\models.py:63
+msgid "date_added"
+msgstr "Qo'shilgan vaqti"
+
+#: .\blog\models.py:70
+msgid "comments"
+msgstr "Izohlar"
+
+#: .\checkouts\apps.py:8 .\checkouts\models.py:35
+msgid "checkouts"
+msgstr "Ro'yxat"
+
+#: .\checkouts\models.py:13 .\users\models.py:15
+msgid "user"
+msgstr "Foydalanuvchi"
+
+#: .\checkouts\models.py:14 .\shop\models.py:83
+msgid "products"
+msgstr "Mahsulot"
+
+#: .\checkouts\models.py:15 .\watches\apps.py:8 .\watches\models.py:85
+msgid "watches"
+msgstr "Soatlar"
+
+#: .\checkouts\models.py:16 .\mobile\models.py:85
+msgid "mobile phones"
+msgstr "Uyali aloqa"
+
+#: .\checkouts\models.py:17 .\mobile\models.py:51 .\shop\models.py:50
+#: .\watches\models.py:51
+msgid "price"
+msgstr "Narx"
+
+#: .\checkouts\models.py:20 .\users\models.py:18
+msgid "phone"
+msgstr "Telefon"
+
+#: .\checkouts\models.py:21 .\contact\models.py:9 .\home\models.py:27
+#: .\users\models.py:19
+msgid "email"
+msgstr "Email po'chta"
+
+#: .\checkouts\models.py:22 .\users\models.py:20
+msgid "country"
+msgstr "Mamlakat"
+
+#: .\checkouts\models.py:23
+msgid "company"
+msgstr "Kampanya"
+
+#: .\checkouts\models.py:24 .\users\models.py:21
+msgid "address"
+msgstr "Turar joy"
+
+#: .\checkouts\models.py:25 .\users\models.py:22
+msgid "city"
+msgstr "Shaxar"
+
+#: .\checkouts\models.py:26 .\users\models.py:23
+msgid "state"
+msgstr "Viloyat"
+
+#: .\checkouts\models.py:27 .\users\models.py:24
+msgid "postcode"
+msgstr "Po'chta ko'di"
+
+#: .\checkouts\models.py:28 .\home\models.py:28 .\wishlist\models.py:16
+msgid "created_at"
+msgstr "Yaqratilgan Vaqti"
+
+#: .\checkouts\models.py:34
+msgid "checkout"
+msgstr "Ro'yxat"
+
+#: .\contact\apps.py:8 .\contact\models.py:18
+msgid "contact"
+msgstr "Aloqa"
+
+#: .\contact\models.py:10
+msgid "subject"
+msgstr "Mavzu"
+
+#: .\contact\models.py:11
+msgid "message"
+msgstr "Xabar"
+
+#: .\contact\models.py:19
+msgid "contacts"
+msgstr "Aloqa"
+
+#: .\contact\models.py:24
+msgid "description"
+msgstr "Tavsif"
+
+#: .\contact\models.py:30
+msgid "faq"
+msgstr "FAQ"
+
+#: .\contact\models.py:31
+msgid "faqs"
+msgstr "FAQS"
+
+#: .\home\apps.py:8
+msgid "home"
+msgstr "Uy"
+
+#: .\home\models.py:9
+msgid "info"
+msgstr "Malumot"
+
+#: .\home\models.py:10
+msgid "price info"
+msgstr "Narx"
+
+#: .\home\models.py:11 .\home\models.py:19
+msgid "banner"
+msgstr "Banner"
+
+#: .\home\models.py:12
+msgid "additional image"
+msgstr "Qo'shimcha rasm"
+
+#: .\home\models.py:20
+msgid "banners"
+msgstr "Bannerlar"
+
+#: .\home\models.py:25 .\mobile\models.py:50 .\mobile\models.py:91
+#: .\shop\models.py:49 .\shop\models.py:89 .\watches\models.py:50
+#: .\watches\models.py:91 .\watches\models.py:97
+msgid "image"
+msgstr "Rasm"
+
+#: .\home\models.py:26
+msgid "job"
+msgstr "Kasb"
+
+#: .\home\models.py:34
+msgid "about"
+msgstr "Haqida"
+
+#: .\home\models.py:35
+msgid "about us"
+msgstr "Biz haqimizda"
+
+#: .\mainsettings\settings.py:94 .\templates\layouts\header.html:51
+msgid "English"
+msgstr "Inglizcha"
+
+#: .\mainsettings\settings.py:95 .\templates\layouts\header.html:54
+msgid "Uzbek"
+msgstr "Uzbekcha"
+
+#: .\mobile\apps.py:8
+msgid "mobile"
+msgstr "Telefon"
+
+#: .\mobile\models.py:20
+msgid "phone brand"
+msgstr "Telefon brendi"
+
+#: .\mobile\models.py:21
+msgid "phone brands"
+msgstr "Telefon brendlari"
+
+#: .\mobile\models.py:32
+msgid "phone category"
+msgstr "Telefon katagoriyasi"
+
+#: .\mobile\models.py:33
+msgid "phone categories"
+msgstr "Telefon Katagoriyalari"
+
+#: .\mobile\models.py:37 .\shop\models.py:36 .\watches\models.py:37
+msgid "code"
+msgstr "Ko'd"
+
+#: .\mobile\models.py:44
+msgid "phone color"
+msgstr "Telfon rangi"
+
+#: .\mobile\models.py:45
+msgid "phone colors"
+msgstr "Telefon ranglari"
+
+#: .\mobile\models.py:52 .\watches\models.py:52
+msgid "real price"
+msgstr "Tan narxi"
+
+#: .\mobile\models.py:53 .\shop\models.py:52 .\watches\models.py:53
+msgid "discount"
+msgstr "Chegirma"
+
+#: .\mobile\models.py:56 .\shop\models.py:19 .\shop\models.py:54
+#: .\watches\models.py:56
+msgid "brand"
+msgstr "Brend"
+
+#: .\mobile\models.py:60 .\shop\models.py:43 .\shop\models.py:58
+#: .\watches\models.py:60
+msgid "color"
+msgstr "Rang"
+
+#: .\mobile\models.py:61 .\watches\models.py:61
+msgid "post views"
+msgstr "Ko'rilishlar"
+
+#: .\mobile\models.py:63 .\shop\models.py:61 .\watches\models.py:63
+msgid "likes"
+msgstr "Likelar"
+
+#: .\mobile\models.py:66
+msgid "additional info"
+msgstr "qo'shimcha malumot"
+
+#: .\mobile\models.py:84
+msgid "mobile phone"
+msgstr "Uyali aloqa"
+
+#: .\mobile\models.py:90 .\shop\models.py:82 .\shop\models.py:88
+msgid "product"
+msgstr "Maxsulot"
+
+#: .\mobile\models.py:97
+msgid "mobile image"
+msgstr "Telefon rasmi"
+
+#: .\mobile\models.py:98
+msgid "mobile images"
+msgstr "Telefon rasmlari"
+
+#: .\shop\apps.py:8
+msgid "shop"
+msgstr "Magazin"
+
+#: .\shop\models.py:20
+msgid "brands"
+msgstr "Brendlar"
+
+#: .\shop\models.py:44
+msgid "colors"
+msgstr "Ranglar"
+
+#: .\shop\models.py:51
+msgid "real_price"
+msgstr "Asl narxi"
+
+#: .\shop\models.py:59
+msgid "product_views"
+msgstr "Ko'rilishlar"
+
+#: .\shop\models.py:64
+msgid "additional_definition"
+msgstr "Qo'shimcha malumot"
+
+#: .\shop\models.py:95
+msgid "product image"
+msgstr "Maxsulot rasmi"
+
+#: .\shop\models.py:96
+msgid "product images"
+msgstr "Maxsulot rasmlari"
+
+#: .\templates\about-us.html:12 .\templates\blog-details-left-sidebar.html:12
+#: .\templates\blog-left-sidebar.html:12 .\templates\checkout.html:12
+#: .\templates\compare.html:13 .\templates\contact.html:12
+#: .\templates\faq.html:12 .\templates\layouts\header.html:125
+#: .\templates\mobile-detail-view.html:12 .\templates\mobile-phones.html:22
+#: .\templates\shop-left-sidebar.html:20 .\templates\shopping-cart.html:10
+#: .\templates\single-product.html:11 .\templates\smartwatch_list.html:20
+#: .\templates\watch-detail.html:12 .\templates\wishlist.html:13
+msgid "Home"
+msgstr "Uy"
+
+#: .\templates\about-us.html:22
+msgid "Provide Best"
+msgstr "Eng yaxshlari"
+
+#: .\templates\about-us.html:22
+msgid "Product For You"
+msgstr "Siz uchun"
+
+#: .\templates\about-us.html:57
+msgid "HAPPY CUSTOMERS"
+msgstr "Baxtli mijozlar"
+
+#: .\templates\about-us.html:73
+msgid "AWARDS WINNER"
+msgstr "G'oliblar"
+
+#: .\templates\about-us.html:88
+msgid "HOURS WORKED"
+msgstr "Ishlagan Vaqti"
+
+#: .\templates\about-us.html:103
+msgid "COMPLETE PROJECTS"
+msgstr "Qilgan loyihalari"
+
+#: .\templates\about-us.html:116
+msgid "Our team"
+msgstr "Bizning jamoa"
+
+#: .\templates\blog-details-left-sidebar.html:32
+msgid "Category"
+msgstr "Toifa"
+
+#: .\templates\blog-details-left-sidebar.html:38
+#: .\templates\blog-left-sidebar.html:44
+msgid "Recent Post"
+msgstr "Yaqindagi Po'st"
+
+#: .\templates\blog-details-left-sidebar.html:56
+#: .\templates\blog-left-sidebar.html:63
+msgid "Tags"
+msgstr "Teglar"
+
+#: .\templates\blog-details-left-sidebar.html:99
+msgid "Share this post"
+msgstr "Po'stni ulashing"
+
+#: .\templates\blog-details-left-sidebar.html:109
+#: .\templates\blog-details-left-sidebar.html:136
+msgid "Comment"
+msgstr "Izoh"
+
+#: .\templates\blog-details-left-sidebar.html:117
+msgid "Reply"
+msgstr "Javob"
+
+#: .\templates\blog-details-left-sidebar.html:130
+msgid "Leave a Comment"
+msgstr "Izoh qoldring"
+
+#: .\templates\blog-details-left-sidebar.html:140 .\templates\checkout.html:83
+#: .\templates\checkout.html:177 .\templates\user-profile.html:50
+msgid "First Name"
+msgstr "Ism"
+
+#: .\templates\blog-details-left-sidebar.html:145 .\templates\checkout.html:89
+#: .\templates\checkout.html:183 .\templates\user-profile.html:56
+msgid "Last Name"
+msgstr "Familya"
+
+#: .\templates\blog-left-sidebar.html:32 .\templates\mobile-phones.html:168
+#: .\templates\shop-left-sidebar.html:154 .\templates\smartwatch_list.html:169
+msgid "Categories"
+msgstr "Toifalar"
+
+#: .\templates\blog-left-sidebar.html:103 .\templates\index.html:327
+msgid "Read More"
+msgstr "Ko'prow o'qing"
+
+#: .\templates\blog-left-sidebar.html:116 .\templates\mobile-phones.html:127
+#: .\templates\shop-left-sidebar.html:110
+msgid "First"
+msgstr "Birinchi"
+
+#: .\templates\blog-left-sidebar.html:117 .\templates\mobile-phones.html:128
+#: .\templates\shop-left-sidebar.html:111 .\templates\smartwatch_list.html:125
+msgid "Previous"
+msgstr "Oldingi"
+
+#: .\templates\blog-left-sidebar.html:121 .\templates\mobile-phones.html:132
+#: .\templates\shop-left-sidebar.html:115 .\templates\smartwatch_list.html:129
+msgid "Page"
+msgstr "Bet"
+
+#: .\templates\blog-left-sidebar.html:125 .\templates\mobile-phones.html:136
+#: .\templates\shop-left-sidebar.html:119 .\templates\smartwatch_list.html:133
+msgid "Next"
+msgstr "Keyingi"
+
+#: .\templates\blog-left-sidebar.html:126
+#: .\templates\shop-left-sidebar.html:120
+msgid "Last "
+msgstr "Oxirgi"
+
+#: .\templates\checkout.html:22
+msgid "Returning customer"
+msgstr ""
+
+#: .\templates\checkout.html:22
+msgid "Click here to login"
+msgstr "Tizimga kirish uchun bosing"
+
+#: .\templates\checkout.html:30
+msgid "Username or email"
+msgstr "Username yoki po'chta"
+
+#: .\templates\checkout.html:34 .\templates\registration\login.html:26
+#: .\templates\registration\registration_form.html:24
+msgid "Password"
+msgstr "Parol"
+
+#: .\templates\checkout.html:41 .\templates\registration\login.html:32
+msgid "Remember me"
+msgstr "Eslab qolish"
+
+#: .\templates\checkout.html:44
+msgid "Lost your password"
+msgstr "Parolni unitingizmi"
+
+#: .\templates\checkout.html:48
+msgid "Have a coupon"
+msgstr ""
+
+#: .\templates\checkout.html:48
+msgid "Click here to enter your code"
+msgstr "Ko'dga kirish uchun bosing"
+
+#: .\templates\checkout.html:66
+msgid "Details"
+msgstr "Batafsil"
+
+#: .\templates\checkout.html:70 .\templates\checkout.html:164
+#: .\templates\user-profile.html:30 .\templates\user-profile.html:78
+msgid "Country"
+msgstr "Mamlakat"
+
+#: .\templates\checkout.html:95 .\templates\checkout.html:189
+msgid "Company Name"
+msgstr "Kampanya nomi"
+
+#: .\templates\checkout.html:101 .\templates\checkout.html:195
+#: .\templates\contact.html:32 .\templates\user-profile.html:100
+msgid "Address"
+msgstr "Manzil"
+
+#: .\templates\checkout.html:112 .\templates\checkout.html:206
+msgid "Town / City"
+msgstr "Shaxar"
+
+#: .\templates\checkout.html:118
+msgid "tate / County"
+msgstr ""
+
+#: .\templates\checkout.html:124 .\templates\checkout.html:218
+msgid "Postcode / Zip"
+msgstr "Zip Ko'd"
+
+#: .\templates\checkout.html:130
+msgid "Email Address "
+msgstr "Elektron po'chta"
+
+#: .\templates\checkout.html:136 .\templates\checkout.html:230
+#: .\templates\contact.html:36 .\templates\layouts\footer.html:75
+#: .\templates\user-profile.html:64
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\templates\checkout.html:143
+msgid "Create an account"
+msgstr "Akkount yarating"
+
+#: .\templates\checkout.html:149
+msgid "Account password"
+msgstr "Akkount ko'di"
+
+#: .\templates\checkout.html:157
+msgid "Ship to a different address"
+msgstr ""
+
+#: .\templates\checkout.html:212
+msgid "State / County"
+msgstr "Viloyat"
+
+#: .\templates\checkout.html:224
+#: .\templates\registration\registration_form.html:20
+msgid "Email Address"
+msgstr "Elektron po'chta"
+
+#: .\templates\checkout.html:237
+msgid "Order Notes"
+msgstr "Buyurtmalar"
+
+#: .\templates\checkout.html:248
+msgid "Your order"
+msgstr "Buyurtmangiz"
+
+#: .\templates\checkout.html:253 .\templates\layouts\footer.html:86
+#: .\templates\shopping-cart.html:26
+msgid "Product"
+msgstr "Maxsulot"
+
+#: .\templates\checkout.html:254 .\templates\shopping-cart.html:29
+#: .\templates\shopping-cart.html:89
+msgid "Total"
+msgstr "Umumiy"
+
+#: .\templates\checkout.html:273
+msgid "Cart Subtotal"
+msgstr "Barcha karta"
+
+#: .\templates\checkout.html:277
+msgid "Order Total"
+msgstr "Barcha buyurtma"
+
+#: .\templates\checkout.html:291
+msgid "Direct Bank Transfer"
+msgstr ""
+
+#: .\templates\checkout.html:310
+msgid "Cheque Payment"
+msgstr ""
+
+#: .\templates\compare.html:14 .\templates\index.html:72
+#: .\templates\layouts\header.html:128
+msgid "Shop"
+msgstr "Magazin"
+
+#: .\templates\compare.html:15 .\templates\index.html:74
+#: .\templates\layouts\header.html:131
+msgid "Watch"
+msgstr "Soat"
+
+#: .\templates\compare.html:16 .\templates\layouts\header.html:134
+msgid "Mobile"
+msgstr "Uyali aloqa"
+
+#: .\templates\compare.html:27
+msgid "Image"
+msgstr "Rasm"
+
+#: .\templates\compare.html:34 .\templates\compare.html:44
+msgid "ADD TO CART"
+msgstr "Kartaga qo'shing"
+
+#: .\templates\compare.html:50
+msgid "Product Name"
+msgstr "Maxsulot nomi"
+
+#: .\templates\compare.html:68
+msgid "Price"
+msgstr "Narx"
+
+#: .\templates\compare.html:73 .\templates\mobile-phones.html:183
+#: .\templates\shop-left-sidebar.html:169 .\templates\smartwatch_list.html:185
+msgid "Color"
+msgstr "Rang"
+
+#: .\templates\compare.html:78
+msgid "Size"
+msgstr "Razmer"
+
+#: .\templates\compare.html:83
+msgid "Stock"
+msgstr ""
+
+#: .\templates\compare.html:88
+msgid "Rating"
+msgstr ""
+
+#: .\templates\contact.html:13 .\templates\layouts\header.html:143
+msgid "Contact"
+msgstr "Aloqa"
+
+#: .\templates\contact.html:26
+msgid "Contact Us"
+msgstr "Biz bilan aloqa"
+
+#: .\templates\contact.html:41 .\templates\layouts\footer.html:79
+#: .\templates\user-profile.html:33 .\templates\user-profile.html:70
+msgid "Email"
+msgstr "Po'chta"
+
+#: .\templates\contact.html:49
+msgid "Tell Us Your Message"
+msgstr ""
+
+#: .\templates\contact.html:54
+msgid "Full Name"
+msgstr "To'liq ism sharfingiz"
+
+#: .\templates\contact.html:58
+msgid "Your Email"
+msgstr "Po'chtangiz"
+
+#: .\templates\contact.html:62
+msgid "Subject"
+msgstr ""
+
+#: .\templates\contact.html:66
+msgid "Your Message"
+msgstr "Xabaringiz"
+
+#: .\templates\contact.html:71
+msgid "Send"
+msgstr "Jo'nat"
+
+#: .\templates\faq.html:23
+msgid ""
+"Below are frequently asked questions, you may find the answer for yourself"
+msgstr ""
+
+#: .\templates\index.html:17 .\templates\index.html:346
+msgid "Sale Offer"
+msgstr ""
+
+#: .\templates\index.html:17 .\templates\index.html:28
+#: .\templates\index.html:39
+msgid " This Week"
+msgstr "Shu hafta"
+
+#: .\templates\index.html:19 .\templates\index.html:30
+#: .\templates\index.html:41
+msgid "Starting at "
+msgstr "Start berladi"
+
+#: .\templates\index.html:21 .\templates\index.html:32
+#: .\templates\index.html:43 .\templates\index.html:354
+msgid "Shopping Now"
+msgstr "Hoziroq harid qiling"
+
+#: .\templates\index.html:28 .\templates\index.html:39
+msgid "Sale Offer "
+msgstr ""
+
+#: .\templates\index.html:28
+msgid "On Friday"
+msgstr "Juma kuni"
+
+#: .\templates\index.html:119 .\templates\index.html:172
+#: .\templates\index.html:269 .\templates\mobile-detail-view.html:79
+#: .\templates\mobile-detail-view.html:202 .\templates\mobile-phones.html:106
+#: .\templates\shop-left-sidebar.html:83 .\templates\single-product.html:78
+#: .\templates\single-product.html:202 .\templates\smartwatch_list.html:103
+#: .\templates\watch-detail.html:79 .\templates\watch-detail.html:202
+#: .\templates\wishlist.html:69
+msgid "Add to cart"
+msgstr "Kartaga qo'shing"
+
+#: .\templates\index.html:224
+msgid "Mobile Phone"
+msgstr "Uyali aloqa"
+
+#: .\templates\index.html:227
+msgid "Prime Video"
+msgstr ""
+
+#: .\templates\index.html:228
+msgid "Computers"
+msgstr "Komputerlar"
+
+#: .\templates\index.html:229
+msgid "Electronics"
+msgstr ""
+
+#: .\templates\index.html:296
+msgid "Gaming"
+msgstr "O'yin"
+
+#: .\templates\index.html:297
+msgid "Mobile Phones"
+msgstr "Uyali aloqa"
+
+#: .\templates\index.html:298
+msgid "E-sports"
+msgstr "Kiber sport"
+
+#: .\templates\index.html:346
+msgid "This Week"
+msgstr "Shu hafta"
+
+#: .\templates\index.html:347
+msgid "Featured Product"
+msgstr ""
+
+#: .\templates\index.html:348
+msgid "Best Accessories"
+msgstr "Eng yaxshi anjomlar"
+
+#: .\templates\index.html:350
+msgid "Starting at"
+msgstr "Start berladi"
+
+#: .\templates\index.html:368
+msgid "Our Team"
+msgstr "Bizning jamoa"
+
+#: .\templates\index.html:371
+msgid "Products"
+msgstr "Maxsulotlar"
+
+#: .\templates\layouts\base.html:8
+msgid "Khalim Brand"
+msgstr "Khalim Brand"
+
+#: .\templates\layouts\footer.html:15
+msgid "Free Delivery"
+msgstr "Bepul yetqazib berish"
+
+#: .\templates\layouts\footer.html:16
+msgid "And free returns. See checkout for delivery dates"
+msgstr ""
+
+#: .\templates\layouts\footer.html:26
+msgid "Safe Payment"
+msgstr "Ishonchli to'lov"
+
+#: .\templates\layouts\footer.html:27
+msgid "Pay with the world's most popular and secure payment methods"
+msgstr ""
+
+#: .\templates\layouts\footer.html:37
+msgid "Shop with Confidence"
+msgstr "Ishonch bilan harid qiling"
+
+#: .\templates\layouts\footer.html:38
+msgid "Our Buyer Protection covers your purchase from click to delivery"
+msgstr ""
+
+#: .\templates\layouts\footer.html:48
+msgid "Help Center"
+msgstr "Yordaam markazi"
+
+#: .\templates\layouts\footer.html:49
+msgid "Have a question? Call a Specialist or chat online"
+msgstr ""
+
+#: .\templates\layouts\footer.html:88
+msgid "Prices drop"
+msgstr ""
+
+#: .\templates\layouts\footer.html:89
+msgid "New products"
+msgstr "Yangi mahsulotlar"
+
+#: .\templates\layouts\footer.html:90
+msgid "Best sales"
+msgstr "Omma bop"
+
+#: .\templates\layouts\footer.html:91 .\templates\layouts\footer.html:102
+msgid "Contact us"
+msgstr "Biz bilan bog'laning"
+
+#: .\templates\layouts\footer.html:97
+msgid "Our company"
+msgstr "Bizning kampanya"
+
+#: .\templates\layouts\footer.html:99
+msgid "Delivery"
+msgstr "Yetqazib berish"
+
+#: .\templates\layouts\footer.html:100
+msgid "Legal Notice"
+msgstr ""
+
+#: .\templates\layouts\footer.html:101
+msgid "About us"
+msgstr "Biz haqimizda"
+
+#: .\templates\layouts\footer.html:108
+msgid "Follow Us"
+msgstr "Birga bo'ling"
+
+#: .\templates\layouts\footer.html:156
+msgid "Subscribe"
+msgstr "Obuna bo'ling"
+
+#: .\templates\layouts\footer.html:172
+msgid "Online Shopping"
+msgstr "Online savdo"
+
+#: .\templates\layouts\footer.html:173
+msgid "Promotions"
+msgstr "Yordam"
+
+#: .\templates\layouts\footer.html:174
+msgid "My Orders"
+msgstr "Buyurtmalarim"
+
+#: .\templates\layouts\footer.html:175
+msgid "Help"
+msgstr "Yordam"
+
+#: .\templates\layouts\footer.html:176
+msgid "Customer Service"
+msgstr "Servislar"
+
+#: .\templates\layouts\footer.html:177
+msgid "Support"
+msgstr "Qo'llab quvatlash"
+
+#: .\templates\layouts\footer.html:178
+msgid "Most Populars"
+msgstr "Eng mashuhurlari"
+
+#: .\templates\layouts\footer.html:179
+msgid "New Arrivals"
+msgstr ""
+
+#: .\templates\layouts\footer.html:180
+msgid "Special Products"
+msgstr "Maxsus anjomalar"
+
+#: .\templates\layouts\footer.html:181
+msgid "Our Stores"
+msgstr ""
+
+#: .\templates\layouts\footer.html:182
+msgid "Shipping"
+msgstr ""
+
+#: .\templates\layouts\footer.html:183
+msgid "Payments"
+msgstr "To'lov"
+
+#: .\templates\layouts\footer.html:184 .\templates\layouts\header.html:106
+msgid "Checkout"
+msgstr "Xarid"
+
+#: .\templates\layouts\footer.html:185
+msgid "Discount"
+msgstr "Chegirma"
+
+#: .\templates\layouts\header.html:11
+msgid "Telephone Enquiry"
+msgstr ""
+
+#: .\templates\layouts\header.html:20 .\templates\layouts\header.html:28
+msgid "Log Out"
+msgstr "Tizimdan chqish"
+
+#: .\templates\layouts\header.html:22 .\templates\layouts\header.html:31
+msgid "Log In"
+msgstr "Tizimga kirish"
+
+#: .\templates\layouts\header.html:38 .\templates\user-profile.html:25
+msgid "Profile"
+msgstr ""
+
+#: .\templates\layouts\header.html:41
+msgid "Language"
+msgstr "Til"
+
+#: .\templates\layouts\header.html:99
+msgid "SUBTOTAL"
+msgstr ""
+
+#: .\templates\layouts\header.html:103
+msgid "View Full Cart"
+msgstr "To'liq karta malumoti"
+
+#: .\templates\layouts\header.html:137
+msgid "About Us"
+msgstr "Biz haqimizda"
+
+#: .\templates\layouts\header.html:140
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\layouts\header.html:146
+msgid "FAQ"
+msgstr "FAQ"
+
+#: .\templates\mobile-detail-view.html:44 .\templates\watch-detail.html:45
+msgid "Reference"
+msgstr ""
+
+#: .\templates\mobile-detail-view.html:52 .\templates\single-product.html:51
+#: .\templates\watch-detail.html:53
+msgid "Read Review"
+msgstr ""
+
+#: .\templates\mobile-detail-view.html:53 .\templates\single-product.html:52
+#: .\templates\watch-detail.html:54
+msgid "Write Review"
+msgstr ""
+
+#: .\templates\mobile-detail-view.html:72 .\templates\shopping-cart.html:28
+#: .\templates\single-product.html:71 .\templates\watch-detail.html:72
+msgid "Quantity"
+msgstr "Miqdor"
+
+#: .\templates\mobile-detail-view.html:83 .\templates\single-product.html:83
+#: .\templates\watch-detail.html:83
+msgid "Add to wishlist"
+msgstr ""
+
+#: .\templates\mobile-detail-view.html:103
+#: .\templates\mobile-detail-view.html:111
+#: .\templates\mobile-detail-view.html:119 .\templates\single-product.html:103
+#: .\templates\single-product.html:111 .\templates\single-product.html:119
+#: .\templates\watch-detail.html:103 .\templates\watch-detail.html:111
+#: .\templates\watch-detail.html:119
+msgid "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+msgstr ""
+
+#: .\templates\mobile-detail-view.html:136 .\templates\single-product.html:136
+#: .\templates\watch-detail.html:136
+msgid "Description"
+msgstr "Tavsif"
+
+#: .\templates\mobile-detail-view.html:157
+msgid "Other products in the same category:"
+msgstr ""
+
+#: .\templates\mobile-detail-view.html:170 .\templates\mobile-phones.html:71
+#: .\templates\shop-left-sidebar.html:47 .\templates\single-product.html:170
+#: .\templates\smartwatch_list.html:69 .\templates\watch-detail.html:170
+#: .\templates\wishlist.html:35
+msgid "New"
+msgstr "Yangi"
+
+#: .\templates\mobile-phones.html:122
+msgid "Hurry up to shopping Mobile Phones"
+msgstr ""
+
+#: .\templates\mobile-phones.html:137 .\templates\smartwatch_list.html:134
+msgid "Last"
+msgstr "So'ngi"
+
+#: .\templates\mobile-phones.html:149
+msgid "Filter By"
+msgstr "Filtirlang"
+
+#: .\templates\mobile-phones.html:152 .\templates\shop-left-sidebar.html:137
+#: .\templates\smartwatch_list.html:151
+msgid "Clear all"
+msgstr "Barchasni o'chring"
+
+#: .\templates\mobile-phones.html:154 .\templates\shop-left-sidebar.html:139
+#: .\templates\smartwatch_list.html:153
+msgid "Brand"
+msgstr "Brend"
+
+#: .\templates\registration\activation_complete.html:4
+msgid "Account Activated"
+msgstr "Akkount foalashtirlidi"
+
+#: .\templates\registration\activation_complete.html:8
+msgid "Your account is now activated."
+msgstr ""
+
+#: .\templates\registration\activation_complete.html:10
+msgid "You can log in."
+msgstr ""
+
+#: .\templates\registration\login.html:7
+msgid "Log in"
+msgstr "Tizmga kiring"
+
+#: .\templates\registration\login.html:19
+#: .\templates\registration\login.html:39
+msgid "Login"
+msgstr ""
+
+#: .\templates\registration\login.html:22
+#: .\templates\registration\registration_form.html:16
+msgid "Username"
+msgstr "Username"
+
+#: .\templates\registration\login.html:36
+msgid "Forgot Password"
+msgstr "Parolni unitingizmi"
+
+#: .\templates\registration\login.html:42
+#: .\templates\registration\registration_form.html:13
+#: .\templates\registration\registration_form.html:32
+msgid "Register"
+msgstr "Ro'yhatdan o'ting"
+
+#: .\templates\registration\logout.html:4
+msgid "Logged out"
+msgstr "Tizmidan chqish"
+
+#: .\templates\registration\logout.html:7
+msgid "Successfully logged out"
+msgstr ""
+
+#: .\templates\registration\password_change_done.html:4
+msgid "Password changed"
+msgstr ""
+
+#: .\templates\registration\password_change_done.html:7
+msgid "Password successfully changed!"
+msgstr ""
+
+#: .\templates\registration\password_change_form.html:4
+#: .\templates\registration\password_change_form.html:10
+msgid "Change password"
+msgstr "Parolni uzgartring"
+
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\password_reset_form.html:15
+msgid "Reset password"
+msgstr ""
+
+#: .\templates\registration\password_reset_form.html:8
+msgid ""
+"\n"
+"    Forgot your password? Enter your email in the form below and we'll send "
+"you instructions for creating a new one.\n"
+"    "
+msgstr ""
+
+#: .\templates\registration\registration_complete.html:4
+msgid "Activation email sent"
+msgstr ""
+
+#: .\templates\registration\registration_complete.html:7
+msgid "Please check your email to complete the registration process."
+msgstr ""
+
+#: .\templates\registration\registration_form.html:4
+msgid "Register for an account"
+msgstr ""
+
+#: .\templates\registration\registration_form.html:28
+msgid "Confirm Password"
+msgstr "Parolni tasdiqlang"
+
+#: .\templates\registration\registration_form.html:36
+msgid "Sign in"
+msgstr ""
+
+#: .\templates\shop-left-sidebar.html:105
+msgid "Hurry up we are here"
+msgstr ""
+
+#: .\templates\shop-left-sidebar.html:132 .\templates\smartwatch_list.html:146
+msgid "Filter By Price"
+msgstr ""
+
+#: .\templates\shopping-cart.html:24
+msgid "Remove"
+msgstr "Olib tashlang"
+
+#: .\templates\shopping-cart.html:25
+msgid "Images"
+msgstr "Rasmlar"
+
+#: .\templates\shopping-cart.html:27
+msgid "Unit Price"
+msgstr ""
+
+#: .\templates\shopping-cart.html:54
+msgid "Mug Today is a good day"
+msgstr ""
+
+#: .\templates\shopping-cart.html:86
+msgid "Cart totals"
+msgstr ""
+
+#: .\templates\shopping-cart.html:88
+msgid "Subtotal"
+msgstr ""
+
+#: .\templates\shopping-cart.html:91
+msgid "Proceed to checkout"
+msgstr ""
+
+#: .\templates\single-product.html:157 .\templates\watch-detail.html:157
+msgid "Other products in the same category"
+msgstr ""
+
+#: .\templates\smartwatch_list.html:119
+msgid "Brand watches"
+msgstr "Brend soatlar"
+
+#: .\templates\user-profile.html:29
+msgid "Name"
+msgstr "Ism"
+
+#: .\templates\user-profile.html:31
+msgid "City"
+msgstr "Shaxar"
+
+#: .\templates\user-profile.html:32
+msgid "Zip Code"
+msgstr "Zip ko'd"
+
+#: .\templates\user-profile.html:84
+msgid "State"
+msgstr "Viloyat"
+
+#: .\templates\user-profile.html:90
+msgid "Postcode / ZIP"
+msgstr "Po'chta ko'di"
+
+#: .\templates\user-profile.html:96
+msgid "Town/City"
+msgstr "Shaxar"
+
+#: .\templates\user-profile.html:104
+msgid "Upload Profile Picture (Optional)"
+msgstr ""
+
+#: .\templates\user-profile.html:111
+msgid "Submit"
+msgstr ""
+
+#: .\users\apps.py:8
+msgid "users"
+msgstr "Foydalanuvchalar"
+
+#: .\users\models.py:11
+msgid "Profile picture"
+msgstr "Profil rasm"
+
+#: .\users\models.py:17
+msgid "Second name"
+msgstr "Familya"
+
+#: .\users\models.py:30
+msgid "profile"
+msgstr "Profil"
+
+#: .\users\models.py:31
+msgid "profiles"
+msgstr "Profillar"
+
+#: .\watches\models.py:20
+msgid "watch brand"
+msgstr "Soat brendi"
+
+#: .\watches\models.py:21
+msgid "watch brands"
+msgstr "Soat brendlari"
+
+#: .\watches\models.py:32
+msgid "watch category"
+msgstr "Soat turi"
+
+#: .\watches\models.py:33
+msgid "watch categories"
+msgstr "Soat turlari"
+
+#: .\watches\models.py:44
+msgid "watch color"
+msgstr "Rangi"
+
+#: .\watches\models.py:45
+msgid "watch colors"
+msgstr "Ranglari"
+
+#: .\watches\models.py:84 .\watches\models.py:90
+msgid "watch"
+msgstr "Soat"
+
+#: .\watches\models.py:98
+msgid "images"
+msgstr "Rasmlar"
+
+#: .\wishlist\apps.py:8
+msgid "wishlist"
+msgstr ""
+
+#: .\wishlist\models.py:14
+msgid "liked_by"
+msgstr "Yoqtirlgan"

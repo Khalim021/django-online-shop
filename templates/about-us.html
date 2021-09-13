@@ -1,0 +1,144 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block content %}
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="index.html">{% trans 'Home' %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-wrapper pt-60 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-last order-lg-first">
+                    <div class="about-text-wrap">
+                        <h2><span>{% trans 'Provide Best' %}</span>{% trans 'Product For You' %}</h2>
+                        <p>We provide the best Beard oile all over the world. We are the worldd best store in indi
+                            for
+                            Beard Oil. You can buy our product without any hegitation because they truste us and buy
+                            our
+                            product without any hagitation because they belive and always happy buy our product.</p>
+                        <p>Some of our customer say’s that they trust us and buy our product without any hagitation
+                            because they belive us and always happy to buy our product.</p>
+                        <p>We provide the beshat they trusted us and buy our product without any hagitation because
+                            they
+                            belive us and always happy to buy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10">
+                    <div class="about-image-wrap">
+                        <img class="img-full" src="{% static 'images/product/large-size/13.jpg' %}" alt="About Us"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="counterup-area">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-md-6">
+                    <div class="limupa-counter white-smoke-bg">
+                        <div class="container">
+                            <div class="counter-img">
+                                <img src="{% static 'images/about-us/icon/1.png' %}" alt="">
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-number">
+                                    <h3 class="counter">2169</h3>
+                                </div>
+                                <div class="counter-text">
+                                    <span>{% trans 'HAPPY CUSTOMERS' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="limupa-counter gray-bg">
+                        <div class="counter-img">
+                            <img src="{% static 'images/about-us/icon/2.png' %}" alt="">
+                        </div>
+                        <div class="counter-info">
+                            <div class="counter-number">
+                                <h3 class="counter">869</h3>
+                            </div>
+                            <div class="counter-text">
+                                <span>{% trans 'AWARDS WINNER' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="limupa-counter white-smoke-bg">
+                        <div class="counter-img">
+                            <img src="{% static 'images/about-us/icon/3.png' %}" alt="">
+                        </div>
+                        <div class="counter-info">
+                            <div class="counter-number">
+                                <h3 class="counter">689</h3>
+                            </div>
+                            <div class="counter-text">
+                                <span>{% trans 'HOURS WORKED' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="limupa-counter gray-bg">
+                        <div class="counter-img">
+                            <img src="{% static 'images/about-us/icon/4.png' %}" alt="">
+                        </div>
+                        <div class="counter-info">
+                            <div class="counter-number">
+                                <h3 class="counter">2169</h3>
+                            </div>
+                            <div class="counter-text">
+                                <span>{% trans 'COMPLETE PROJECTS' %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-area pt-60 pt-sm-44">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="li-section-title capitalize mb-25">
+                        <h2><span>{% trans 'Our team' %}</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in team %}
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="team-member mb-60 mb-sm-30 mb-xs-30">
+                        <div class="team-thumb">
+                            <img src="{{ i.image.url }}" alt="teammate">
+                        </div>
+                        <div class="team-content text-center">
+                            <h3>{{ i.name }}</h3>
+                            <p>{{ i.job }}</p>
+                            <a href="#">{{ i.email }}</a>
+                            <div class="team-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

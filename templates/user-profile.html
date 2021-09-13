@@ -1,0 +1,142 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container emp-profile">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    {% if request.user.profile.profile_pc %}
+                        <img style="width: 100%; height: 300px; border-radius: 50%"
+                             src="{{ request.user.profile.profile_pc.url }}" alt="yuo">
+                    {% else %}
+                        {% static 'images/profile_pics/no_picture.png' %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>Emma Watson</h5>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#" role="tab"
+                               aria-controls="home" aria-selected="true">{% trans 'Profile' %}</a>
+                        </li>
+                    </ul>
+                    <div style="margin: 30px">
+                        <p>{% trans 'Name' %}: {{ userprofilemodel }}</p>
+                        <p>{% trans 'Country' %}: {{ userprofilemodel.country }}</p>
+                        <p>{% trans 'City' %}: {{ userprofilemodel.city }}</p>
+                        <p>{% trans 'Zip Code' %}: {{ userprofilemodel.postcode }}</p>
+                        <p>{% trans 'Email' %}: {{ userprofilemodel.email }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section class="checkout spad">
+        <div class="container mb-5">
+            <div class="checkout__form">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b">{% trans 'First Name' %}</p>
+                                        {{ form.first_name }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b">{% trans 'Last Name' %}</p>
+                                        {{ form.last_name }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Phone' %}</p>
+                                        {{ form.phone }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Email' %}</p>
+                                        {{ form.email }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Country' %}</p>
+                                        {{ form.country }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b; margin-top: 6px">{% trans 'State' %}</p>
+                                        {{ form.state }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="checkout__input">
+                                        <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Postcode / ZIP' %}</p>
+                                        {{ form.postcode }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Town/City' %}</p>
+                                {{ form.city }}
+                            </div>
+                            <div class="checkout__input">
+                                <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Address' %}</p>
+                                {{ form.address1 }}
+                            </div>
+                            <div class="checkout__input" style="margin-top: 12px">
+                                <p style="color: #0b0b0b; margin-top: 6px">{% trans 'Upload Profile Picture (Optional)' %}</p>
+                                <input style="padding: 5px" name="profile_pc" type="file">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button style=" " type="submit"
+                            class="btn btn-primary float-right">{% trans 'Submit' %}
+                    </button>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

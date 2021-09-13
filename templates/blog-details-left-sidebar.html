@@ -1,0 +1,159 @@
+{% extends 'layouts/base.html' %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="index.html">{% trans 'Home' %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="li-main-blog-page li-main-blog-details-page pt-60 pb-60 pb-sm-45 pb-xs-45">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 order-lg-1 order-2">
+                    <div class="li-blog-sidebar-wrapper">
+                        <div class="li-blog-sidebar">
+                        </div>
+                        <div class="li-blog-sidebar pt-25">
+                            <h4 class="li-blog-sidebar-title">{% trans 'Category' %}</h4>
+                            <ul class="li-blog-archive">
+                                <li><a style="color: #0b0b0b" href="#">{{ object.category }}</a></li>
+                            </ul>
+                        </div>
+                        <div class="li-blog-sidebar">
+                            <h4 class="li-blog-sidebar-title">{% trans 'Recent Post' %}</h4>
+                            {% for post in post %}
+                                <div class="li-recent-post pb-30">
+                                    <div class="li-recent-post-thumb">
+                                        <a href="{{ post.video.url }}">
+                                            <video class="img-full" src="{{ post.video.url }}"
+                                                   type="video/mp4"></video>
+                                        </a>
+                                    </div>
+                                    <div class="li-recent-post-des">
+                                        <span><a
+                                                href="{% url 'blog:blog-detail' pk=post.pk %}">{{ post.title }}</a></span>
+                                        <span class="li-post-date">{{ post.created|date:'d.m.Y' }}</span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="li-blog-sidebar">
+                            <h4 class="li-blog-sidebar-title">{% trans 'Tags' %}</h4>
+                            <ul class="li-blog-tags">
+                                <li><a style="color: #0b0b0b"
+                                       href="#">
+                                    {% for tag in object.tags.all %}{{ tag.title }}{% if not forloop.last %},
+                                    {% endif %}{% endfor %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 order-lg-2 order-1">
+                    <div class="row li-main-content">
+                        <div class="col-lg-12">
+                            <div class="li-blog-single-item pb-30">
+                                <div class="li-blog-banner">
+                                    <a href="{{ object.video.url }}">
+                                        <video class="img-full"
+                                               src="{{ object.video.url }}"
+                                               type="video/mp4"></video>
+                                    </a>
+                                </div>
+                                <div class="li-blog-content">
+                                    <div class="li-blog-details">
+                                        <h3 class="li-blog-heading pt-25"><a href="#">{{ object.title }}</a></h3>
+                                        <div class="li-blog-meta">
+                                            <a class="author" href="#"><i class="fa fa-user"></i>{{ object.author }}</a>
+                                            <a class="post-time" href="#">
+                                                <i class="fa fa-calendar"></i>{{ object.created|date:'d.m.Y' }}</a>
+                                        </div>
+                                        <p>{{ object.short_description|safe }}</p>
+
+                                        <div class="li-blog-blockquote">
+                                            <blockquote>
+                                                <p>{{ object.extra_content|safe }}</p>
+                                            </blockquote>
+                                        </div>
+                                        <p>{{ object.long_description|safe }}</p>
+                                        <div class="li-tag-line">
+                                            <h4>tag:</h4>
+                                            <a href="#">{% for tag in object.tags.all %}{{ tag.title }}
+                                                {% if not forloop.last %}, {% endif %}{% endfor %}</a>,
+                                        </div>
+                                        <div class="li-blog-sharing text-center pt-30">
+                                            <h4>{% trans 'Share this post' %}:</h4>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li-comment-section">
+                                <h3>{% trans 'Comment' %}</h3>
+                                <ul>
+                                    {% for comments in object.get_comments.all %}
+                                        <li>
+                                            <div class="author-avatar pt-15">
+                                                <img src="{% static 'images/product-details/user.png' %}" alt="User">
+                                            </div>
+                                            <div class="comment-body pl-15">
+                                                <span class="reply-btn pt-15 pt-xs-5"><a href="#">{% trans 'Reply' %}</a></span>
+                                                <h5 class="comment-author pt-15">{{ comments.first_name }}
+                                                    {{ comments.last_name }}</h5>
+                                                <div class="comment-post-date">
+                                                    {{ comments.date_added }}
+                                                </div>
+                                                <p>{{ comments.comment }}</p>
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="li-blog-comment-wrapper">
+                                <h3>{% trans 'Leave a Comment' %}</h3>
+                                <form method="POST" action="{% url 'blog:comment-create' pk=object.pk %}">
+                                    {% csrf_token %}
+                                    <div class="comment-post-box">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>{% trans 'Comment' %}</label>
+                                                <textarea name="comment" placeholder="Write a comment"></textarea>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mt-5 mb-sm-20 mb-xs-20">
+                                                <label>{% trans 'First Name' %}</label>
+                                                <input name="first_name" type="text" class="coment-field"
+                                                       placeholder="Name">
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 mt-5 mb-sm-20 mb-xs-20">
+                                                <label>{% trans 'Last Name' %}</label>
+                                                <input name="last_name" type="text" class="coment-field"
+                                                       placeholder="Last Name">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="coment-btn pt-30 pb-sm-30 pb-xs-30 f-left">
+                                                    <input class="li-btn-2" type="submit" name="submit"
+                                                           value="Post comment">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

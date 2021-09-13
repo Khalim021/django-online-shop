@@ -1,0 +1,163 @@
+{% load static %}
+{% load basic_tags %}
+{% load i18n %}
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="header-top-left">
+                        <ul class="phone-wrap">
+                            <li><span>{% trans 'Telephone Enquiry' %}:</span><a href="#">(+99894) 707 71 71</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="header-top-right">
+                        <ul class="ht-menu">
+                            <li>
+                                {% if request.user.is_authenticated %}
+                                    <div class="ht-setting-trigger"><span>{% trans 'Log Out' %}</span></div>
+                                {% else %}
+                                    <div class="ht-setting-trigger"><span>{% trans 'Log In' %}</span></div>
+                                {% endif %}
+                                <div class="setting ht-setting">
+                                    <ul class="ht-setting-list">
+                                        {% if request.user.is_authenticated %}
+                                            <li><a href="{% url 'auth_logout' %}"><strong style="color: #111111">
+                                                {% trans 'Log Out' %}</strong></a></li>
+                                        {% else %}
+                                            <li><a href="{% url 'auth_login' %}"><strong style="color: #111111">
+                                                {% trans 'Log In' %}</strong></a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="{% url 'profile:user' %}"><span
+                                        style="color: #111111">{% trans 'Profile' %}</span></a>
+                            </li>
+                            <li>
+                                <span class="language-selector-wrapper">{% trans 'Language' %} :</span>
+                                {% get_current_language as lang %}
+                                <div class="ht-language-trigger"><span>{{ lang }}</span></div>
+                                <div class="language ht-language">
+                                    <ul class="ht-setting-list">
+                                        {% get_available_languages as all_langs %}
+                                        {% for l in all_langs %}
+                                            {% if l.0 != lang %}
+                                                <li class="active"><a href="{% get_lang_url request l.0 %}">
+                                                    <img src="{% static 'images/menu/flag-icon/1.jpg' %}"
+                                                         alt="">{% trans 'English' %}</a></li>
+                                                <li><a href="{% get_lang_url request l.0 %}">
+                                                    <img src="{% static 'images/menu/flag-icon/uzb-2.png' %}"
+                                                         alt="">{% trans 'Uzbek' %}</a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo pb-sm-30 pb-xs-30">
+                        <a href="#">
+                            <img src="{% static 'images/menu/logo/1.jpg' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                    <form action="{% url 'shop:shop-list' %}" class="hm-searchbox">
+                        <input name="q" type="text" placeholder="Enter your search key ...">
+                        <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="header-middle-right">
+                        <ul class="hm-menu">
+                            <li class="hm-wishlist">
+                                <a href="{% url 'wishlist:user-wishlist' %}">
+                                    <span class="cart-item-count wishlist-item-count">0</span>
+                                    <i class="fa fa-heart-o"></i>
+                                </a>
+                            </li>
+                            <li class="hm-minicart">
+                                <div class="hm-minicart-trigger">
+                                    <span class="item-icon"></span>
+                                    <span class="item-text">£80.00
+                                                    <span class="cart-item-count">2</span>
+                                                </span>
+                                </div>
+                                <span></span>
+                                <div class="minicart">
+                                    <p class="minicart-total">{% trans 'SUBTOTAL' %}: <span>£80.00</span></p>
+                                    <div class="minicart-button">
+                                        <a href="{% url 'checkout:cart' %}"
+                                           class="li-button li-button-fullwidth li-button-dark">
+                                            <span>{% trans 'View Full Cart' %}</span>
+                                        </a>
+                                        <a href="{% url 'checkouts:checkouts' %}" class="li-button li-button-fullwidth">
+                                            <span>{% trans 'Checkout' %}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom header-sticky d-none d-lg-block d-xl-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hb-menu">
+                        <nav>
+                            <ul>
+                                <li class="dropdown-holder">
+                                    <a href="{% url 'home:home' %}">{% trans 'Home' %}</a>
+                                </li>
+                                <li class="megamenu-holder">
+                                    <a href="{% url 'shop:shop-list' %}">{% trans 'Shop' %}</a>
+                                </li>
+                                <li class="dropdown-holder">
+                                    <a href="{% url 'watch:watch-list' %}">{% trans 'Watch' %}</a>
+                                </li>
+                                <li class="megamenu-static-holder">
+                                    <a href="{% url 'mobile:mobile-list' %}">{% trans 'Mobile' %}</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home:about' %}">{% trans 'About Us' %}</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'blog:blog-list' %}">{% trans 'Blog' %}</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact:contact' %}">{% trans 'Contact' %}</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact:faq' %}">{% trans 'FAQ' %}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-area d-lg-none d-xl-none col-12">
+        <div class="container">
+            <div class="row">
+                <div class="mobile-menu">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,64 @@
+{% extends "registration/registration_base.html" %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+    <div style="margin-left: 35%">
+        <div class="page-section mb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-30">
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="next" value="{{ next }}"/>
+                            <div class="login-form">
+                                <h4 class="login-title">{% trans 'Login' %}</h4>
+                                <div class="row">
+                                    <div class="col-md-12 col-12 mb-20">
+                                        <label for="username">{% trans 'Username' %}</label>
+                                        <input name="username" class="mb-0" type="text" placeholder="your name" id="username">
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label for="password">{% trans 'Password' %}</label>
+                                        <input name="password" class="mb-0" type="password" placeholder="Password" id="password">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="check-box d-inline-block ml-0 ml-md-2 mt-10">
+                                            <input type="checkbox" id="remember_me">
+                                            <label for="remember_me">{% trans 'Remember me' %}</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-10 mb-20 text-left text-md-right">
+                                        <a href="#">{% trans 'Forgot Password' %}?</a>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="register-button mt-0">{% trans 'Login' %}</button>
+                                        <a href="{% url 'registration_register' %}"
+                                           style="text-align: center" type="submit"
+                                           class="register-button float-right mt-0">{% trans 'Register' %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <a style="width: 32%; margin-left:35%" href="#" class="btn btn-block py-2 btn-facebook">
+            <span class="icon-facebook mr-3"></span> Login with facebook
+        </a>
+        <a style="width: 32%; margin-left: 35%" href="#" class="btn btn-block py-2 btn-google"><span
+                class="icon-google mr-3"></span> Login with
+            Google</a>
+        <a style="width: 32%; margin-left:35%; margin-bottom: 50px;" href="#" class="btn btn-block py-2 btn-secondary">
+            <span class="icon-twitter mr-3"></span> Login with Twitter
+        </a>
+    </div>
+{% endblock %}
+

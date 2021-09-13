@@ -1,0 +1,44 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Register for an account" %}{% endblock %}
+
+{% block content %}
+    <div style="margin-left: 30%">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.errors }}
+                <div class="login-form">
+                    <h4 class="login-title">{% trans 'Register' %}</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-20">
+                            <label for="username">{% trans 'Username' %}</label>
+                            <input name="username" class="mb-0" type="text" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 col-12 mb-20">
+                            <label for="username">{% trans 'Email Address' %}*</label>
+                            <input name="email" class="mb-0" type="email" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <label for="password">{% trans 'Password' %}</label>
+                            <input name="password1" class="mb-0" type="password" placeholder="Password">
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <label for="password">{% trans 'Confirm Password' %}</label>
+                            <input name="password2" class="mb-0" type="password" placeholder="Confirm Password">
+                        </div>
+                        <div class="col-md-6 mb-20">
+                            <button class="btn btn-secondary" type="submit">{% trans 'Register' %}</button>
+                        </div>
+                        <div class="col-12">
+                            <span class="register-button">
+                                <a href="{% url 'auth_login' %}">{% trans 'Sign in' %}</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'layouts/base.html' %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="index.html">{% trans 'Home' %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wishlist-area pt-60 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#">
+                        <div class="table-content table-responsive">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    {% for content_type in object_list %}
+                                        <div class="col-lg-4 col-md-4 col-sm-6 mt-40">
+                                            <div class="single-product-wrap">
+                                                <div class="product-image">
+                                                    <a href="#">
+                                                        <img src="{{ content_type.image.url }}"
+                                                             alt="Li's Product Image">
+                                                    </a>
+                                                    <span class="sticker">{% trans 'New' %}</span>
+                                                </div>
+                                                <div class="product_desc">
+                                                    <div class="product_desc_info">
+                                                        <div class="product-review">
+                                                            <h5 class="manufacturer">
+                                                                <a href="#">Mikro Amazon</a>
+                                                            </h5>
+                                                            <div class="rating-box">
+                                                                <ul class="rating">
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star-o"></i>
+                                                                    </li>
+                                                                    <li class="no-star"><i class="fa fa-star-o"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <h4>
+                                                            {{ content_type.title }}
+                                                        </h4>
+                                                        <div class="price-box">
+                                                                <span class="new-price">${{ content_type.real_price }}
+                                                                    {% if content_type.is_discount %}
+                                                                        <strike class="small">${{ content_type.price }}</strike>
+                                                                    {% endif %}
+                                                                </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-actions">
+                                                        <ul class="add-actions-link">
+                                                            <li class="add-cart active"><a
+                                                                    href="shopping-cart.html">{% trans 'Add to cart' %}</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
