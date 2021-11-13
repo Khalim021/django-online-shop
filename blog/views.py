@@ -32,7 +32,7 @@ class BlogListView(ListView):
         context = super().get_context_data(**kwargs)
         context['category'] = CategoryModel.objects.all()
         context['tags'] = TagModel.objects.all()
-        context['recent_post'] = BlogModel.objects.order_by('-pk')[:4]
+        context['recent_post'] = BlogModel.objects.order_by('?')[:4]
 
         return context
 
@@ -43,7 +43,7 @@ class BlogDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['post'] = BlogModel.objects.order_by('-pk')[:4]
+        context['post'] = BlogModel.objects.order_by('?')[:4]
 
         return context
 
